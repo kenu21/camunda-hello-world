@@ -15,7 +15,8 @@
 
     <bpmn:serviceTask id="helloTask"
                       name="Print Hello"
-                      camunda:class="com.keniu.HelloDelegate">
+                      camunda:class="com.keniu.HelloDelegate"
+                      camunda:asyncBefore="true">
       <bpmn:incoming>flow1</bpmn:incoming>
       <bpmn:outgoing>flow2</bpmn:outgoing>
     </bpmn:serviceTask>
